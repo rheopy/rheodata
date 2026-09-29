@@ -1,0 +1,37 @@
+id: freq_sweep_demo
+title: 'Demo frequency sweep: synthetic Maxwell fluid'
+description: Synthetic single-sample small-amplitude oscillatory frequency sweep with
+  single-Maxwell-mode response.
+material:
+  name: Synthetic Maxwell fluid
+  kind: viscoelastic fluid
+source:
+  paper:
+    title: Synthetic fixture (no publication)
+    authors:
+    - rheodata test suite
+    journal: —
+    year: 2026
+    doi: 10.0000/rheodata.fixture2
+  figure: n/a (synthetic)
+provenance:
+  origin: synthetic fixture for the rheodata test suite
+measurement:
+  type: frequency_sweep
+  geometry: parallel plate 25 mm
+  temperature_C: 25
+  details: strain amplitude 1%
+  protocol: SAOS frequency sweep, 5 pts/decade
+samples:
+- id: s1
+  label: demo sample
+columns:
+  x: Angular frequency / rad/s
+  y: Storage modulus G' / Pa
+  sample: sample_id
+  g_storage: Storage modulus G' / Pa
+  g_loss: Loss modulus G'' / Pa
+tags:
+- demo
+- viscoelastic
+- frequency-sweep

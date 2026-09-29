@@ -1,0 +1,34 @@
+id: startup_demo
+title: 'Demo shear startup: synthetic stress overshoot'
+description: 'Synthetic single-sample shear startup curve: stress vs strain at constant
+  shear rate.'
+material:
+  name: Synthetic elastoplastic fluid
+  kind: yield-stress fluid
+source:
+  paper:
+    title: Synthetic fixture (no publication)
+    authors:
+    - rheodata test suite
+    journal: —
+    year: 2026
+    doi: 10.0000/rheodata.fixture3
+  figure: n/a (synthetic)
+provenance:
+  origin: synthetic fixture for the rheodata test suite
+measurement:
+  type: shear_startup
+  geometry: cone-plate 40 mm, 2 deg
+  temperature_C: 25
+  details: constant shear rate 1 /s
+  protocol: startup after 300 s rest
+samples:
+- id: s1
+  label: demo sample
+columns:
+  x: Strain / -
+  y: Stress / Pa
+  sample: sample_id
+tags:
+- demo
+- startup

@@ -1,0 +1,71 @@
+id: ghosh2019_fig3
+title: pNIPAM microgel flow curves from glassy to jammed regimes (Ghosh et al. 2019,
+  Fig. 3)
+description: Steady-state flow curves of self-crosslinked, slightly charged, repulsive
+  pNIPAM microgel suspensions digitized from Fig. 3 of Ghosh et al., Soft Matter 15,
+  1038-1052 (2019). Seven volume fractions from 0.46 to 0.881, spanning the fluid,
+  glassy, and putatively jammed regimes. The paper combines experiment with a microscopic
+  force-based theory of nonlinear yielding across all three regimes.
+material:
+  name: Self-crosslinked pNIPAM microgel suspension in water
+  kind: microgel
+source:
+  paper:
+    title: Linear and nonlinear rheology and structural relaxation in dense glassy
+      and jammed soft repulsive pNIPAM microgel suspensions
+    authors:
+    - Ghosh, A.
+    - Chaudhary, G.
+    - Kang, J. G.
+    - Braun, P. V.
+    - Ewoldt, R. H.
+    - Schweizer, K. S.
+    journal: Soft Matter
+    year: 2019
+    doi: 10.1039/c8sm02014k
+  figure: '3'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Steady-state flow curves; measurement protocol not reported with the digitized
+    data.
+samples:
+- id: phi_0.46
+  label: φ = 0.46
+  volume_fraction: 0.46
+- id: phi_0.51
+  label: φ = 0.51
+  volume_fraction: 0.51
+- id: phi_0.62
+  label: φ = 0.62
+  volume_fraction: 0.62
+- id: phi_0.72
+  label: φ = 0.72
+  volume_fraction: 0.72
+- id: phi_0.8
+  label: φ = 0.8
+  volume_fraction: 0.8
+- id: phi_0.88
+  label: φ = 0.88
+  volume_fraction: 0.88
+- id: phi_0.881
+  label: φ = 0.881
+  volume_fraction: 0.881
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- microgel
+- volume-fraction-series
+- colloidal glass

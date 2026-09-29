@@ -1,0 +1,77 @@
+id: paredes2013_fig1
+title: Emulsion flow curves across the zero-temperature jamming transition (Paredes,
+  Michels & Bonn 2013, Fig. 1)
+description: 'Steady-state flow curves of a dense soft-sphere emulsion digitized from
+  Fig. 1 of Paredes, Michels & Bonn, Phys. Rev. Lett. 111, 015701 (2013). Ten volume
+  fractions from 0.65 to 0.80 spanning the jamming transition. This is the foundational
+  dataset for the jamming-as-critical-transition scaling picture: supercritical curves
+  follow Herschel-Bulkley and collapse onto a master curve when rescaled by distance
+  to jamming.'
+material:
+  name: Dense soft-sphere emulsion
+  kind: emulsion
+source:
+  paper:
+    title: Rheology across the zero-temperature jamming transition
+    authors:
+    - Paredes, J.
+    - Michels, M. A. J.
+    - Bonn, D.
+    journal: Physical Review Letters
+    year: 2013
+    doi: 10.1103/PhysRevLett.111.015701
+  figure: '1'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Steady-state flow curves; measurement protocol not reported with the digitized
+    data.
+samples:
+- id: phi_0.8
+  label: φ = 0.8
+  volume_fraction: 0.8
+- id: phi_0.78
+  label: φ = 0.78
+  volume_fraction: 0.78
+- id: phi_0.76
+  label: φ = 0.76
+  volume_fraction: 0.76
+- id: phi_0.74
+  label: φ = 0.74
+  volume_fraction: 0.74
+- id: phi_0.72
+  label: φ = 0.72
+  volume_fraction: 0.72
+- id: phi_0.7
+  label: φ = 0.7
+  volume_fraction: 0.7
+- id: phi_0.68
+  label: φ = 0.68
+  volume_fraction: 0.68
+- id: phi_0.67
+  label: φ = 0.67
+  volume_fraction: 0.67
+- id: phi_0.66
+  label: φ = 0.66
+  volume_fraction: 0.66
+- id: phi_0.65
+  label: φ = 0.65
+  volume_fraction: 0.65
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- emulsion
+- volume-fraction-series
+- jamming

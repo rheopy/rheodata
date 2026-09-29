@@ -1,0 +1,37 @@
+id: flow_curve_demo
+title: 'Demo flow curve: synthetic yield-stress fluid (2 samples)'
+description: Synthetic two-sample steady-shear flow sweep with Herschel-Bulkley-like
+  response, for the rheodata test suite.
+material:
+  name: Synthetic yield-stress fluid
+  kind: yield-stress fluid
+source:
+  paper:
+    title: Synthetic fixture (no publication)
+    authors:
+    - rheodata test suite
+    journal: —
+    year: 2026
+    doi: 10.0000/rheodata.fixture
+  figure: n/a (synthetic)
+provenance:
+  origin: synthetic fixture for the rheodata test suite
+measurement:
+  type: flow_curve
+  geometry: cone-plate 40 mm, 2 deg
+  temperature_C: 25
+  details: log-spaced shear-rate sweep
+  protocol: steady shear, 10 s per point
+samples:
+- id: s1
+  label: 0.5 wt%
+- id: s2
+  label: 1.0 wt%
+columns:
+  x: Shear rate / 1/s
+  y: Stress / Pa
+  sample: sample_id
+tags:
+- demo
+- yield-stress
+- flow-curve
