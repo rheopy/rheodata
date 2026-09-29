@@ -1,0 +1,41 @@
+id: caggioni_linear_polymer_frequency_sweep
+title: High-MW linear polymer in water, frequency sweep (community)
+description: 'Small-amplitude frequency sweep of a high-molecular-weight linear polymer in aqueous solution: 31 points, angular frequency 100 down to 0.1 rad/s at strain amplitude 0.5 %, 25 C (inside the linear viscoelastic regime located by the companion amplitude sweep). The complex viscosity feeds the Cox-Merz superposition against the steady-shear flow curve. Parent TRIOS file a_remake_dhr2.json (step ''Frequency sweep - 3''). Originally measured for the rheofit Carreau walkthrough.'
+material:
+  name: High-molecular-weight linear polymer in water
+  kind: polymer solution
+source:
+  paper:
+    title: Unpublished (community contribution)
+    authors: []
+    journal: null
+    year: null
+    doi: null
+  figure: null
+provenance:
+  origin: community
+  digitized: false
+  digitizer: null
+measurement:
+  type: frequency_sweep
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: 25
+  protocol: Frequency sweep 100 -> 0.1 rad/s (high to low) at strain amplitude 0.5 %, 31 points.
+samples:
+- id: linear_polymer
+  label: High-MW linear polymer, aqueous solution
+columns:
+  x: omega_rad/s
+  y: Gp_Pa
+  g_storage: Gp_Pa
+  g_loss: Gpp_Pa
+  sample: sample_id
+units:
+  x: rad/s
+  y: Pa
+tags:
+- polymer solution
+- oscillatory
+- frequency-sweep
+- cox-merz

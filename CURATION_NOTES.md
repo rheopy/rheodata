@@ -78,9 +78,16 @@ walkthrough docs state; anything else is "not reported".
 concentric-cylinder (stated in walkthrough.md §"case study").
 
 **caggioni_linear_polymer_flow** — from `docs/walkthrough/a_remake_dhr2.json`
-("Flow sweep - 2", 51 points, 0.01–1000 s⁻¹, 25 °C). Only the flow sweep is kept;
-the amplitude and frequency sweeps in the same file are deliberately excluded
-(this dataset type is `flow_curve`). Geometry "not reported".
+("Flow sweep - 2", 51 points, 0.01–1000 s⁻¹, 25 °C). Geometry "not reported".
+
+**caggioni_linear_polymer_amplitude_sweep** — from `docs/walkthrough/a_remake_dhr2.json`
+("Amplitude sweep - 1"), 41 points, strain 1000→0.1 % at fixed ω = 1 rad/s, 25 °C.
+G′/G″ strain-independent to γ₀ ≈ 10–25 % (LVE locator); feeds the Delaware–Rutgers
+rule. Tidy columns: `strain_pct`, `Gp_Pa`, `Gpp_Pa`.
+
+**caggioni_linear_polymer_frequency_sweep** — from `docs/walkthrough/a_remake_dhr2.json`
+("Frequency sweep - 3"), 31 points, ω 100→0.1 rad/s at γ₀ = 0.5 %, 25 °C.
+Feeds the Cox–Merz superposition. Tidy columns: `omega_rad/s`, `Gp_Pa`, `Gpp_Pa`.
 
 **caggioni_wlm_polymer_temp_series** — from `docs/walkthrough/aos_2_1.json`, all
 seven flow sweeps ("Flow sweep - 1..7"), 41 points each, 0.01–100 s⁻¹. Step → sample
