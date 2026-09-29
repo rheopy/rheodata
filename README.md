@@ -22,7 +22,7 @@ validation — sorted shear rates, no NaNs, sample ids that match the metadata.
 ## Quickstart
 
 ```bash
-pip install rheodata
+pip install rheopy-rheodata
 ```
 
 ```python
