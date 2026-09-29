@@ -1,0 +1,42 @@
+id: caggioni_linear_polymer_amplitude_sweep
+title: High-MW linear polymer in water, amplitude sweep (community)
+description: 'Strain-amplitude sweep of a high-molecular-weight linear polymer in aqueous solution: 41 points from 1000 down to 0.1 % at fixed angular frequency 1 rad/s, 25 C. G-prime and G-double-prime are strain-independent up to a strain amplitude of about 10-25 %, locating the linear viscoelastic regime; the sweep also feeds the Delaware-Rutgers rule. Parent TRIOS file a_remake_dhr2.json (step ''Amplitude sweep - 1''). Originally measured for the rheofit Carreau walkthrough.'
+material:
+  name: High-molecular-weight linear polymer in water
+  kind: polymer solution
+source:
+  paper:
+    title: Unpublished (community contribution)
+    authors: []
+    journal: null
+    year: null
+    doi: null
+  figure: null
+provenance:
+  origin: community
+  digitized: false
+  digitizer: null
+measurement:
+  type: amplitude_sweep
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: 25
+  protocol: Strain amplitude sweep 1000 -> 0.1 % (high to low) at fixed angular frequency 1 rad/s, 41 points.
+samples:
+- id: linear_polymer
+  label: High-MW linear polymer, aqueous solution
+columns:
+  x: strain_pct
+  y: Gp_Pa
+  g_storage: Gp_Pa
+  g_loss: Gpp_Pa
+  sample: sample_id
+units:
+  x: '%'
+  y: Pa
+tags:
+- polymer solution
+- oscillatory
+- amplitude-sweep
+- delaware-rutgers
+- lve

@@ -2,10 +2,10 @@ id: caggioni_linear_polymer_flow
 title: High-MW linear polymer in water, flow curve (community)
 description: 'Equilibrium flow sweep of a high-molecular-weight linear polymer in
   aqueous solution: 51 points from 0.01 to 1000 s^-1 at 25 C. A near-ideal Carreau
-  fluid: zero-shear plateau crossing into a power-law thinning regime. The parent
-  TRIOS file also holds amplitude and frequency sweeps (not included here) used for
-  Cox-Merz and Delaware-Rutgers checks. Originally measured for the rheofit Carreau
-  walkthrough.'
+  fluid: zero-shear plateau crossing into a power-law thinning regime. The companion oscillatory sweeps from the same TRIOS file live in
+  caggioni_linear_polymer_amplitude_sweep and caggioni_linear_polymer_frequency_sweep
+  (used for Cox-Merz and Delaware-Rutgers checks). Originally measured for the
+  rheofit Carreau walkthrough.'
 material:
   name: High-molecular-weight linear polymer in water
   kind: polymer solution
