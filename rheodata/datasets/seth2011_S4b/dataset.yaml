@@ -1,0 +1,59 @@
+id: seth2011_S4b
+title: Soft particle glass flow curves, supplementary set B (Seth et al. 2011, Fig.
+  S4b)
+description: Steady-state flow curves of jammed soft-particle glasses digitized from
+  supplementary Fig. S4b of Seth et al., Nature Mater. 10, 838-843 (2011). Three volume
+  fractions (0.72, 0.75, 0.86). Companion to the S4a set, covering a second batch
+  of the same soft-particle system; the paper's micromechanical model is compared
+  against both sets. One small digitization glitch in the 0.72 curve (single out-of-order
+  point) was fixed by sorting.
+material:
+  name: Soft particle glass (deformable microgel)
+  kind: microgel
+source:
+  paper:
+    title: A micromechanical model to predict the flow of soft particle glasses
+    authors:
+    - Seth, J. R.
+    - Mohan, L.
+    - Locatelli-Champagne, C.
+    - Cloitre, M.
+    - Bonnecaze, R. T.
+    journal: Nature Materials
+    year: 2011
+    doi: 10.1038/nmat3119
+  figure: S4b
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: cone-plate
+  geometry_details: 50 mm, 2 deg (Anton Paar MCR 501)
+  temperature_C: 20
+  protocol: Measured on an Anton-Paar MCR 501 with cone-and-Peltier-plate (50 mm,
+    2 deg, 48 um truncation) and solvent trap at 20 C; roughened shearing surfaces
+    (waterproof sandpaper, 20 um) to suppress wall slip.
+samples:
+- id: phi_0.86
+  label: φ = 0.86
+  volume_fraction: 0.86
+- id: phi_0.75
+  label: φ = 0.75
+  volume_fraction: 0.75
+- id: phi_0.72
+  label: φ = 0.72
+  volume_fraction: 0.72
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- microgel
+- soft-particle-glass
+- volume-fraction-series

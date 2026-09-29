@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rheodata"
+version = "0.1.0"
+description = "Curated, quality-checked rheology datasets for training, simulation, and benchmarking."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Marco Caggioni", email = "marco.caggioni@gmail.com" }]
+keywords = ["rheology", "datasets", "flow curve", "viscosity", "benchmark", "machine learning"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.23,<3",
+    "pandas>=1.5",
+    "matplotlib>=3.6,<4",
+    "pyyaml>=6",
+]
+
+[project.urls]
+Homepage = "https://github.com/rheopy/rheodata"
+Repository = "https://github.com/rheopy/rheodata"
+
+[project.scripts]
+rheodata = "rheodata.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rheodata"]

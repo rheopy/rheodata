@@ -1,0 +1,65 @@
+id: mason1996_fig5
+title: Monodisperse emulsion flow curves vs volume fraction (Mason, Bibette & Weitz
+  1996, Fig. 5)
+description: Steady-state flow curves of fractionated monodisperse oil-in-water emulsions
+  digitized from Fig. 5 of Mason, Bibette & Weitz, J. Colloid Interface Sci. 179,
+  439-448 (1996). Six volume fractions from 0.55 to 0.65 across the disordered close-packing
+  transition. The original stress values were recorded in dynes/cm2 and have been
+  converted to Pa (x 0.1); this is the classic dataset showing the sharp onset of
+  a yield stress above random close packing.
+material:
+  name: Monodisperse oil-in-water emulsion (SDS-stabilized)
+  kind: emulsion
+source:
+  paper:
+    title: Yielding and flow of monodisperse emulsions
+    authors:
+    - Mason, T. G.
+    - Bibette, J.
+    - Weitz, D. A.
+    journal: Journal of Colloid and Interface Science
+    year: 1996
+    doi: 10.1006/jcis.1996.0235
+  figure: '5'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Steady-state flow curves; measurement protocol not reported with the digitized
+    data.
+samples:
+- id: phi_0.55
+  label: φ = 0.55
+  volume_fraction: 0.55
+- id: phi_0.57
+  label: φ = 0.57
+  volume_fraction: 0.57
+- id: phi_0.58
+  label: φ = 0.58
+  volume_fraction: 0.58
+- id: phi_0.60
+  label: φ = 0.60
+  volume_fraction: 0.6
+- id: phi_0.63
+  label: φ = 0.63
+  volume_fraction: 0.63
+- id: phi_0.65
+  label: φ = 0.65
+  volume_fraction: 0.65
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- emulsion
+- volume-fraction-series
+- jamming

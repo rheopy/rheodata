@@ -1,0 +1,61 @@
+id: petekidis2004_fig5
+title: PMMA colloidal glass flow curves (Petekidis, Vlassopoulos & Pusey 2004, Fig.
+  5)
+description: 'Steady-state flow curves of hard-sphere PMMA colloidal glasses digitized
+  from Fig. 5 of Petekidis, Vlassopoulos & Pusey, J. Phys.: Condens. Matter 16, S3955-S3963
+  (2004). Five volume fractions from 0.586 to 0.63. The original figure has normalized
+  axes, so the recorded scale factors were applied: shear rate x 0.158 s^-1, stress
+  x 0.0825 Pa, giving yield stresses of order 1-100 Pa, consistent with hard-sphere
+  colloidal glasses at these volume fractions. One out-of-order digitization point
+  in the 0.596 curve was fixed by sorting.'
+material:
+  name: Hard-sphere PMMA colloidal suspension
+  kind: colloidal glass
+source:
+  paper:
+    title: Yielding and flow of sheared colloidal glasses
+    authors:
+    - Petekidis, G.
+    - Vlassopoulos, D.
+    - Pusey, P. N.
+    journal: 'Journal of Physics: Condensed Matter'
+    year: 2004
+    doi: 10.1088/0953-8984/16/38/013
+  figure: '5'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Steady-state flow curves; original figure axes were normalized (see description).
+samples:
+- id: phi_0.63
+  label: φ = 0.63
+  volume_fraction: 0.63
+- id: phi_0.62
+  label: φ = 0.62
+  volume_fraction: 0.62
+- id: phi_0.603
+  label: φ = 0.603
+  volume_fraction: 0.603
+- id: phi_0.596
+  label: φ = 0.596
+  volume_fraction: 0.596
+- id: phi_0.586
+  label: φ = 0.586
+  volume_fraction: 0.586
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- colloidal glass
+- volume-fraction-series

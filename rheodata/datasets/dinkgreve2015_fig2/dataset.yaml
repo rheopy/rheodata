@@ -1,0 +1,68 @@
+id: dinkgreve2015_fig2
+title: Rigid-emulsion flow curves near jamming (Dinkgreve et al. 2015, Fig. 2)
+description: Steady-state flow curves of castor-oil-in-water emulsions with rigid
+  droplet interfaces (0.4 wt% BSA + 0.4 wt% PGA), digitized from Fig. 2(a) of Dinkgreve,
+  Paredes, Michels & Bonn, Phys. Rev. E 92, 012305 (2015). Seven internal volume fractions
+  from 0.65 to 0.80, spanning the jamming concentration. All supercritical curves
+  are well described by the Herschel-Bulkley equation; the paper uses this dataset
+  to demonstrate universal rescaling of flow curves with distance to jamming.
+material:
+  name: 'Castor oil-in-water emulsion (rigid interfaces: BSA + PGA)'
+  kind: emulsion
+source:
+  paper:
+    title: Universal rescaling of flow curves for yield-stress fluids close to jamming
+    authors:
+    - Dinkgreve, M.
+    - Paredes, J.
+    - Michels, M. A. J.
+    - Bonn, D.
+    journal: Physical Review E
+    year: 2015
+    doi: 10.1103/PhysRevE.92.012305
+  figure: '2'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: cone-plate
+  geometry_details: Anton Paar MCR 301 (controlled shear stress)
+  temperature_C: null
+  protocol: Steady-state flow curves from up-and-down shear-rate sweeps (10^-2-10^2
+    s^-1). Samples presheared at 100 s^-1 for 30 s, then rested 30 s before measurement.
+samples:
+- id: phi_0.8
+  label: φ = 0.8
+  volume_fraction: 0.8
+- id: phi_0.76
+  label: φ = 0.76
+  volume_fraction: 0.76
+- id: phi_0.72
+  label: φ = 0.72
+  volume_fraction: 0.72
+- id: phi_0.7
+  label: φ = 0.7
+  volume_fraction: 0.7
+- id: phi_0.68
+  label: φ = 0.68
+  volume_fraction: 0.68
+- id: phi_0.66
+  label: φ = 0.66
+  volume_fraction: 0.66
+- id: phi_0.65
+  label: φ = 0.65
+  volume_fraction: 0.65
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- emulsion
+- volume-fraction-series
+- jamming

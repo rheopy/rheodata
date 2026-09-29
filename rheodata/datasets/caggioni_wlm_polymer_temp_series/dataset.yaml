@@ -1,0 +1,65 @@
+id: caggioni_wlm_polymer_temp_series
+title: Wormlike-micelle + polymer surfactant system, temperature series (community)
+description: 'Equilibrium flow curves of a mixed surfactant system - wormlike micelles
+  (WLM) plus a polymer solution: 41 points each from 0.01 to 100 s^-1 at 18, 20, 22,
+  24, 26 and 28 C, plus a repeat at 18 C. The curves carry at least two distinct relaxation
+  times (a fast WLM mode and a slow polymer mode); a single Carreau model cannot bend
+  twice, making this the benchmark dataset for two-mode (carreau-carreau) fits. Parameters
+  evolve smoothly with temperature and the WLM mode fades at 26-28 C. Originally measured
+  for the rheofit carreau-carreau walkthrough.'
+material:
+  name: Wormlike micelles + polymer surfactant system
+  kind: micellar solution
+source:
+  paper:
+    title: Unpublished (community contribution)
+    authors: []
+    journal: null
+    year: null
+    doi: null
+  figure: null
+provenance:
+  origin: community
+  digitized: false
+  digitizer: null
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Equilibrium flow sweeps, 0.01-100 s^-1, 41 points each, at 18-28 C plus
+    an 18 C repeat.
+samples:
+- id: T_18
+  label: 18 C
+  temperature_C: 18
+- id: T_20
+  label: 20 C
+  temperature_C: 20
+- id: T_22
+  label: 22 C
+  temperature_C: 22
+- id: T_24
+  label: 24 C
+  temperature_C: 24
+- id: T_26
+  label: 26 C
+  temperature_C: 26
+- id: T_28
+  label: 28 C
+  temperature_C: 28
+- id: T_18_repeat
+  label: 18 C (repeat)
+  temperature_C: 18
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- polymer solution
+- wormlike micelles
+- temperature-series
+- flow-curve

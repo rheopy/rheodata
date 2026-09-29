@@ -1,0 +1,44 @@
+id: caggioni_pg_carbopol_2pct
+title: Carbopol Ultrez 21 in propylene glycol, flow curve (community)
+description: 'A single equilibrium flow sweep of 2% Carbopol Ultrez 21 dispersed in
+  propylene glycol: 61 points from 10^-3 to 10^3 s^-1 at 20 C, measured with a concentric-cylinder
+  geometry. Carbopol is a jammed microgel (a soft-particle glass) and propylene glycol
+  is a viscous continuous phase; this combination is the textbook case where a three-component
+  (TC) model separates the particle and viscous contributions better than Herschel-Bulkley.
+  Originally measured for the rheofit fit-app walkthrough.'
+material:
+  name: 2% Carbopol Ultrez 21 in propylene glycol
+  kind: microgel
+source:
+  paper:
+    title: Unpublished (community contribution)
+    authors: []
+    journal: null
+    year: null
+    doi: null
+  figure: null
+provenance:
+  origin: community
+  digitized: false
+  digitizer: null
+measurement:
+  type: flow_curve
+  geometry: concentric-cylinder
+  geometry_details: not reported
+  temperature_C: 20
+  protocol: Equilibrium flow sweep, shear rate 10^-3-10^3 s^-1, 61 points.
+samples:
+- id: carbopol_2pct
+  label: 2% Carbopol Ultrez 21 in propylene glycol
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- microgel
+- carbopol
+- flow-curve

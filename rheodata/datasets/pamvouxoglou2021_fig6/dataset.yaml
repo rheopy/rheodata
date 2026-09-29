@@ -1,0 +1,57 @@
+id: pamvouxoglou2021_fig6
+title: Concentrated colloidal suspension flow curves (Pamvouxoglou et al. 2021, Fig.
+  6)
+description: Steady-state flow curves of concentrated hard-sphere colloidal suspensions
+  digitized from Fig. 6 of Pamvouxoglou, Schofield, Petekidis & Egelhaaf, J. Rheol.
+  65, 1219-1233 (2021). Three volume fractions (0.575, 0.602, 0.624) near the colloidal
+  glass transition. The paper compares stress- versus strain-controlled shear and
+  the yielding/relaxation behavior of the same suspensions; the digitized curves are
+  the steady-state flow curves.
+material:
+  name: Concentrated colloidal suspension (hard-sphere-like)
+  kind: colloidal glass
+source:
+  paper:
+    title: 'Stress versus strain controlled shear: Yielding and relaxation of concentrated
+      colloidal suspensions'
+    authors:
+    - Pamvouxoglou, A.
+    - Schofield, A. B.
+    - Petekidis, G.
+    - Egelhaaf, S. U.
+    journal: Journal of Rheology
+    year: 2021
+    doi: 10.1122/8.0000212
+  figure: '6'
+provenance:
+  origin: literature
+  digitized: true
+  digitizer: WebPlotDigitizer
+measurement:
+  type: flow_curve
+  geometry: not reported
+  geometry_details: not reported
+  temperature_C: null
+  protocol: Steady-state flow curves; one out-of-order digitization point in the 0.624
+    curve fixed by sorting.
+samples:
+- id: phi_0.624
+  label: φ = 0.624
+  volume_fraction: 0.624
+- id: phi_0.602
+  label: φ = 0.602
+  volume_fraction: 0.602
+- id: phi_0.575
+  label: φ = 0.575
+  volume_fraction: 0.575
+columns:
+  x: shear_rate_1/s
+  y: stress_Pa
+  sample: sample_id
+units:
+  x: 1/s
+  y: Pa
+tags:
+- yield-stress
+- colloidal glass
+- volume-fraction-series
