@@ -1,7 +1,7 @@
 # rheodata — Data Discovery: Usage Examples
 
 Three copy-paste recipes for the `data-discovery` skill. All assume
-`pip install rheodata` (or the skill's `scripts/rheodata_cli.py` fallback —
+`pip install rheopy-rheodata` (or the skill's `scripts/rheodata_cli.py` fallback —
 replace `rheodata` with `python scripts/rheodata_cli.py` in the CLI examples).
 
 ---
