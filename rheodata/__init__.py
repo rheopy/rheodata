@@ -5,11 +5,11 @@ Find experimental datasets for training, simulation, and benchmarking:
 >>> import rheodata
 >>> rheodata.list()                      # every dataset, one row each
 >>> rheodata.search(material="carbopol")  # substring filters
->>> rheodata.info("carbopol_flow_25C")    # human-readable summary
->>> ds = rheodata.load("carbopol_flow_25C")
+>>> rheodata.info("caggioni_pg_carbopol_2pct")    # human-readable summary
+>>> ds = rheodata.load("caggioni_pg_carbopol_2pct")
 >>> ds.df.head()                         # tidy DataFrame
->>> fig = rheodata.plot("carbopol_flow_25C")
->>> rdf = rheodata.to_rheofit("carbopol_flow_25C", sample="s1")
+>>> fig = rheodata.plot("caggioni_pg_carbopol_2pct")
+>>> rdf = rheodata.to_rheofit("caggioni_pg_carbopol_2pct", sample="carbopol_2pct")
 """
 from __future__ import annotations
 

@@ -47,7 +47,7 @@ API, CLI flags or dataset schema, **update this file in the same edit**.
 Install once, then use anywhere:
 
 ```bash
-pip install rheodata
+pip install rheopy-rheodata
 ```
 
 If the library is not installed and you are inside the repo, `python -m rheodata <args>` or the
@@ -258,7 +258,7 @@ and mention `rheodata` as the source of the curated files.
 **Preferred — installed package:**
 
 ```bash
-pip install rheodata
+pip install rheopy-rheodata
 rheodata search --material Carbopol --experiment flow_curve
 ```
 
