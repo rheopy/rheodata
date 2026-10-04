@@ -1,17 +1,18 @@
 # rheodata 📊
 
-**Curated, quality-checked rheology datasets — for training, simulation, and benchmarking.**
+**Curated rheology datasets — for training, simulation, and benchmarking.**
 
-Machine learning on rheology is starving for data it can trust. Raw curves scraped from the
-internet arrive with unknown geometries, missing temperatures, unlabelled units, and figures
-digitised without a record of it. A dataset you cannot trust is worse than no dataset at all —
-it launders its own uncertainty into your conclusions.
+"What's the typical rheology of a microgel suspension? Linear polymer? concentrated emulsion?"
+"What's the typical rheology of a shampoo? conditioner? hand cream? 
 
-`rheodata` fixes the supply side: a pip-installable library of experimental rheology datasets
-where every dataset carries its **provenance** (native instrument values vs digitised from a
+While a lot of data are available they are not always readily available and sometimes miss some of the metadata required to make them useful
+
+`rheodata` is a pip-installable library of experimental rheology datasets
+Every dataset carries its **provenance** (native instrument values vs digitised from a
 published figure), its **measurement record** (geometry, temperature, protocol, units), and its
-**citation** (source paper + DOI). Nothing enters the catalog without passing schema and data
-validation — sorted shear rates, no NaNs, sample ids that match the metadata.
+**citation** (community source or paper + DOI). The data are provided with a declared schema to allow simple use.
+
+What can I do with it?
 
 🔍 **Discover** — `rheodata.search(material="carbopol", experiment="flow_curve")`
 📖 **Inspect** — `rheodata.info(id)` prints material, paper + clickable DOI, figure, measurement, samples
@@ -74,18 +75,11 @@ drawn up when the project started in 2021:
 
 ![Original rheodata schema sketch (2021)](docs/schema-sketch.jpg)
 
-## Citing
-
-Always cite the **source paper**, not just the package. Every dataset's metadata carries its
-paper and DOI — `rheodata.info(id)` prints a clickable link. If you publish work built on
-rheodata datasets, cite the papers and mention `rheodata` as the source of the curated files.
-
 ## Contributing
 
 New datasets are curated through the GitHub issue workflow: open an issue on the
 [rheodata repository](https://github.com/rheopy/rheodata) with the source paper or data file
-and the proposed metadata. Please don't invent dataset ids or commit data yourself — curation
-keeps the catalog trustworthy. See `docs` (link below) for the contributor guide.
+and the proposed metadata. See `docs` (link below) for the contributor guide.
 
 ## Documentation
 
