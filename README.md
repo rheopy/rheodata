@@ -69,6 +69,11 @@ On import, the registry validates every dataset: required metadata keys, DOI sha
 NaNs in x/y, and sample ids matching the metadata. A dataset that fails validation fails
 loudly, naming the dataset — corrupt data never loads silently.
 
+The layout implements the original schema sketch — paper → sample → experiment → data —
+drawn up when the project started in 2021:
+
+![Original rheodata schema sketch (2021)](docs/schema-sketch.jpg)
+
 ## Citing
 
 Always cite the **source paper**, not just the package. Every dataset's metadata carries its
