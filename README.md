@@ -4,6 +4,8 @@
 
 **Curated rheology datasets — for training, simulation, and benchmarking.**
 
+![Original rheodata schema sketch (2021)](docs/schema-sketch.jpg)
+
 "What's the typical rheology of a microgel suspension? Linear polymer? concentrated emulsion?"
 "What's the typical rheology of a shampoo? conditioner? hand cream? 
 
@@ -14,13 +16,15 @@ Every dataset carries its **provenance** (native instrument values vs digitised 
 published figure), its **measurement record** (geometry, temperature, protocol, units), and its
 **citation** (community source or paper + DOI). The data are provided with a declared schema to allow simple use.
 
+The schema — paper → sample → experiment → data — mantain the original data structure as in the first implementation in 2021.
+
 What can I do with it?
 
-🔍 **Discover** — `rheodata.search(material="carbopol", experiment="flow_curve")`
-📖 **Inspect** — `rheodata.info(id)` prints material, paper + clickable DOI, figure, measurement, samples
-📦 **Load** — `rheodata.load(id)` gives a tidy DataFrame plus the full metadata dict
-📈 **Plot** — `rheodata.plot(id)` draws the experiment-appropriate figure (twin-axis flow curves, G′/G″ sweeps, …)
-🔧 **Fit** — `rheodata.to_rheofit(id, sample)` hands a flow curve to [rheofit](https://github.com/rheopy/rheofit) in exactly the shape it expects
+* 🔍 **Discover** — `rheodata.search(material="carbopol", experiment="flow_curve")`
+* 📖 **Inspect** — `rheodata.info(id)` prints material, paper + clickable DOI, figure, measurement, samples
+* 📦 **Load** — `rheodata.load(id)` gives a tidy DataFrame plus the full metadata dict
+* 📈 **Plot** — `rheodata.plot(id)` draws the experiment-appropriate figure (twin-axis flow curves, G′/G″ sweeps, …)
+* 🔧 **Fit** — `rheodata.to_rheofit(id, sample)` hands a flow curve to [rheofit](https://github.com/rheopy/rheofit) in exactly the shape it expects
 
 ## Quickstart
 
@@ -71,11 +75,6 @@ On import, the registry validates every dataset: required metadata keys, DOI sha
 (`^10\.\S+/\S+`), csv columns matching the yaml, numeric x sorted ascending per sample, no
 NaNs in x/y, and sample ids matching the metadata. A dataset that fails validation fails
 loudly, naming the dataset — corrupt data never loads silently.
-
-The layout implements the original schema sketch — paper → sample → experiment → data —
-drawn up when the project started in 2021:
-
-![Original rheodata schema sketch (2021)](docs/schema-sketch.jpg)
 
 ## Contributing
 
