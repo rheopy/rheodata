@@ -1,3 +1,5 @@
+[![Documentation](https://img.shields.io/badge/docs-rheodata-blue.svg)](https://github.com/rheopy/rheodata#readme)
+
 # rheodata 📊
 
 **Curated rheology datasets — for training, simulation, and benchmarking.**
